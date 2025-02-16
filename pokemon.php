@@ -48,7 +48,7 @@ if (!$pokemon) {
         </div>
         
         <!-- Bouton de suppression -->
-        <form action="index.php" method="post" onsubmit="return confirm('Are you sure you want to remove this Pokémon from your team?');">
+        <form action="index.php" method="post" onsubmit="return confirm('Are you sure you want to remove this Pokémon from your list?');">
             <input type="hidden" name="_method" value="DELETE">
             <input type="hidden" name="pokemon_name" value="<?php echo htmlspecialchars($pokemon['name']); ?>">
             <button type="submit" class="delete-button">Remove</button>
